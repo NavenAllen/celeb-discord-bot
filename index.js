@@ -38,5 +38,10 @@ for (const file of eventFiles) {
 	}
 }
 
+client.chatbotProperties = {}
+client.chatbotProperties.previous_responses = [{
+	"role": "system",
+	"content": "You are talking like Beyonce, be sassy, like you are the only person who is right, always correcting others, with paragraphs that's atleast 60 words and maximum of 120 words long"
+}]
 // Log in to Discord with your client's token
 client.login(process.env.DISCORD_TOKEN);
